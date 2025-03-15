@@ -130,14 +130,18 @@ body {
     position: relative;
 }
 
-.herodes {
-    position: absolute;
-    bottom: 10px;
-    left: 310px;
+.hero-body{
+    position: relative;
 }
 
+.herodes {
+    position: absolute;
+    top: 10px;
+    left: -475px;
+    width: 1000px;
+}   
 .herodes h1 {
-    font-size: 3rem;
+    font-size: 39px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -812,8 +816,21 @@ margin-right: 15px;
 }
 
 
-
-
+@media (max-width: 768px) {
+    .herodes {
+        position: absolute;
+        /* bottom: 10px; */
+        left: -212px;
+        width: 415px;
+        padding: 10px;
+        h1{
+            font-size: 23px;
+        }
+        p{
+            font-size: 13px;
+        }
+        }
+    }
 
 
 @media (max-width:768px) {
@@ -872,6 +889,14 @@ margin-right: 15px;
             gap: 10px;
         }
     }
+    .movie-container-header{
+        p{
+            display: none;
+        }
+        h2{
+            font-size: 17px;
+        }
+    }
     
     /* actor-responsive */
     .img--{
@@ -899,6 +924,8 @@ margin-right: 15px;
             
         }
     }
+    
+   
 }
 
 .card-text-section{
