@@ -1,0 +1,207 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Manrope", sans-serif;}
+
+    body {
+        background-color: #141414;
+    }
+
+    .container {
+        width: 85%;
+        margin: auto;
+        padding: 20px 0;
+    }
+
+
+
+.navlogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.navlogo .logo {
+    width: 40px;
+}
+
+.navlogo .play {
+    width: 10px;
+    position: absolute;
+    left: 17px;
+    top: 16px;
+}
+
+.navlogo .logo-name {
+    width: 120px;
+}
+
+.navlist {
+    background-color: #0F0F0F;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: #1F1F1F solid 4px;
+}
+.navlist .nav-link {
+    color: #BFBFBF;
+    padding: 10px 10px; 
+    border-radius: 10px; 
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navlist .nav-link:hover,
+.navlist .nav-link.active { 
+    background-color: #1A1A1A; 
+    color: #ffffff; 
+}
+
+.navlist ul {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-nav {
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+@media (max-width: 992px) {
+    .icon-nav{
+        display: none;
+    }
+}
+
+.icon-nav:hover {
+    color: #bfbfbf;
+}
+.navbar-nav {
+    margin: 10px 0px;
+}
+
+.test{
+    background-color: rgba(15, 15, 15, 1);
+    border: rgba(38, 38, 38, 1) solid 1px;
+    border-radius: 12px;
+}
+.input_style{
+    display: block;
+    width:100% ;
+    padding: 10px 5px;
+    border: 1px solid rgba(38, 38, 38, 1);
+    border-radius: 8px;
+    background-color: rgba(20, 20, 20, 1);
+}
+.input_style1{
+    display: block;
+    width:97% ;
+    padding: 10px 5px;
+    border: 1px solid rgba(38, 38, 38, 1);
+    border-radius: 8px;
+    background-color: rgba(20, 20, 20, 1);
+}
+#button{
+    color: white;
+    background-color: rgba(229, 0, 0, 1);
+}
+form span{
+    color:     rgba(153, 153, 153, 1)    ;
+}
+.submit{
+    margin-inline: 15px;
+}
+.Ask-contant p{
+    color: rgba(153, 153, 153, 1);
+}
+.number{
+    width:50px ;
+    height: 50px;
+    border: 1px solid rgba(38, 38, 38, 1);
+    border-radius:10px ;
+    padding: 10px;
+}
+
+.phone {
+    display: flex;
+    gap: 10px;
+
+    .country-container{
+        border: 1px solid rgba(38, 38, 38, 1);
+        border-radius:10px ;
+        padding: 7px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: rgba(20, 20, 20, 1);
+        img{
+            height: 20px;
+        }
+        .arrow-down {
+            height: 9px;
+        }
+        }
+}
+.number-contant{
+    color: rgba(153, 153, 153, 1);
+}
+.Ask h3{
+    font-weight: 500;
+}
+.Ques{
+    border-bottom-width: 2px  ;
+    border-bottom-style: solid;
+    border-image: 
+    linear-gradient(to right,  rgba(229, 0, 0, 0),rgba(229, 0, 0, 1) ,rgba(229, 0, 0, 0)) 100% 1 100%;
+}
+.background-footer{
+    background-image: url(../img/Background\ Images.png );
+    background-size: cover;
+    height: 225px;
+    object-fit: cover;
+    margin: 30px 0px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 12px;
+    border: 1px solid rgba(38, 38, 38, 1) ;
+    .background-footer-info{
+        h2{
+            color: white;
+        }
+        p{
+            color: #999999;
+        }
+    }
+    .btn-danger{
+        background-color: #E50000;
+        padding: 15px 25px; 
+    }
+}
+
+.footer-container{
+    padding: 60px 0px;
+    background-color: #0F0F0F;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 25px;
+    h2{
+        padding-bottom:20px ;
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+    p{
+        font-family: "Manrope", sans-serif;
+        color: #999999;
+    }
+    .footer-icon{
+        display: flex;
+        gap: 10px;
+        img{
+            width: 40px;
+        }
+    }
+}

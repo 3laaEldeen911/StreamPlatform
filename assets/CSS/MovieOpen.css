@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;}
+
+body {
+    background-color: #141414;
+}
+
+
+a{
+    text-decoration: none;
+
+}
+
+:root{
+    --bord: 1px solid #262626;
+    --raduis:12px;
+}
+
+
+.navlogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.navlogo .logo {
+    width: 40px;
+}
+
+.navlogo .play {
+    width: 10px;
+    position: absolute;
+    left: 17px;
+    top: 16px;
+}
+
+.navlogo .logo-name {
+    width: 120px;
+}
+
+
+.navlist {
+    background-color: #0F0F0F;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: #1F1F1F solid 4px;
+}
+.navlist .nav-link {
+    color: #BFBFBF;
+    padding: 10px 10px; 
+    border-radius: 10px; 
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navlist .nav-link:hover,
+.navlist .nav-link.active { 
+    background-color: #1A1A1A; 
+    color: #ffffff; 
+}
+
+.navlist ul {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-nav {
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+@media (max-width: 992px) {
+    .icon-nav{
+        display: none;
+    }
+}
+
+.icon-nav:hover {
+    color: #bfbfbf;
+}
+.navbar-nav {
+    margin: 10px 0px;
+}
+.footer-container{
+    padding: 60px 0px;
+    background-color: #0F0F0F;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 25px;
+    h2{
+        padding-bottom:20px ;
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+    p{
+        font-family: "Manrope", sans-serif;
+        color: #999999;
+    }
+    .footer-icon{
+        display: flex;
+        gap: 10px;
+        img{
+            width: 40px;
+        }
+    }
+}
+
+
+.back-ground-head{
+    background: linear-gradient(rgb(0 0 0 / 20%), #141414), url(../img/land-page1.png);     
+    height: 535px;
+    width: auto;
+    object-fit: cover;
+    padding: 60px 0px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.land-info{
+    position: absolute;
+    bottom: 10px;
+    left: 125px;
+
+    padding-bottom: 30px;
+
+        p{
+        color: #999999;
+    }
+
+    .land-info-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        gap: 10px;
+        .btn{
+            display: flex;
+            align-items: center;
+            background-color: red;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+            i{
+                margin-right: 7 px;
+            }
+            
+            a{
+                color: #FFFFFF;
+            }
+        }
+    }
+    .btn:hover{
+        background-color: white;
+    }
+    .btn:hover a {
+        color:black ;
+    }
+}
+
+.discription{
+    background-color: #1A1A1A;
+    border: 1px solid #262626;
+    padding: 20px 40px;
+    border-radius: 8px 10px 8px 10px ;
+    h2{
+        font-size: 18px;
+        color: #999999;
+    }
+
+    p{
+        font-size: 16px;
+
+        color: #FFFFFF;
+    }
+
+}
+
+.actor-container {
+    background-color: #1A1A1A;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 20px 0px;
+    border: 1px solid #262626;
+}
+
+.actor-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.actor-header-container h2 {
+    color: #999999;
+    font-size: 16px;
+}
+
+.actor-header-icon i {
+    color: #999999;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.img-container {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-- {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.img-- img {
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.text-container{
+    margin: 50px 0px;
+    background-color: #141414;
+    border:var(--bord) ;
+    border-radius: var(--raduis);
+    padding: 30px ;
+    color: white;
+    .text-p{
+        color: #999999;
+    }
+}
+
+
+.review-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    .review-header-btn{
+        padding: 15px 25px ;
+        background-color: #141414;
+        border: var(--bord);
+        border-radius: 14px 16px 14px 16px;
+        a{
+            color: #FFFFFF;
+        }
+    }
+    h2{
+        color: #999999;
+    }
+    
+}
+.review-container{
+    padding: 25px;
+    background-color: #1A1A1A;
+    border: var(--bord);
+    border-radius: var(--raduis);    
+}
+
+.review-body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px ;
+    gap: 20px;
+    .review-card{
+        background-color: #0F0F0F;
+        border: var(--bord);
+        border-radius: var(--raduis);
+        padding: 30px 20px;
+        width: 350px;
+    }
+    .review-card-header{
+        display: flex;
+        justify-content: space-between;
+        .review-card-info{
+            h2{
+                color: white;
+                font-size: 20px;
+            }
+            p{
+                color: #999999;
+                font-size: 18px;
+            }
+        }
+    }
+    .review-card-rate{
+        display: flex;
+        gap: 2px;
+        span{
+            color: red ;
+        }
+        p{
+            color: #999999;
+        }
+    }
+    .review-card-body{
+        p{
+            color: #999999;
+        }
+    }
+}
+.review-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span{
+        padding: 0px 5px;
+        color: #999999;
+        font-size: 30px;
+    }
+    .review-footer-dash{
+    }
+    font-size: 20px;
+    margin: 0px 5px;
+        
+    span{
+            .r-minus{
+                color: #E50000;
+        }
+    }
+}
+
+.info-season{
+background-color: #1A1A1A;
+border: var(--bord);
+border-radius: var(--raduis);
+height: 100%;
+    .info-season-header{
+        h5{
+            color: #999999;
+            padding-bottom: 10px;
+        }
+        p{
+            color: #FFFFFF;
+        }
+    }
+    .lang-container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .badge-{
+        background-color: #141414;
+        border-radius: 8px;
+        border: 1px solid #333;
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: 0.3s;
+        color: #FFFFFF;
+    }
+    .info-season {
+        background-color: #1A1A1A;
+        border: 1px solid #333;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .rating {
+        width: 100%;
+        margin: 20px 0px;
+    }
+    
+    .rating-head{
+        font-size: 18px;
+        color: #999999;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 15px 0px;
+    }
+    
+    .rating-card-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    
+    .rating-card {
+        border: var(--bord);
+        background-color: #141414;
+        border-radius: 8px;
+        padding: 5px;
+        text-align: center;
+        min-width: 130px;
+        flex: 1;
+    }
+
+    .rating-card p {
+        color: white;
+        margin: 5px 0;
+    }
+
+    .review-card-rate {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .review-card-rate span {
+        color: #E50000;
+        font-size: 11px;
+    }
+
+    .review-card-rate p {
+        color: white;
+        font-size: 14px;
+        margin: 0;
+    }
+}
+.director-card{
+    display: flex;
+    gap: 10px;    
+    background-color: #141414;
+    width: 100% ;
+    border: var(--bord);
+    align-items: center ;
+    padding:15px ;
+    border-radius: var(--raduis);
+    img{    
+        height: 70px;
+        border-radius: var(--raduis);
+    }
+    h5{
+        color: #FFFFFF;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    p{
+        color:#999999;
+        font-size: 12px;
+    }
+
+}
+
+.fa-arrow-right {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; 
+    height: 50px;
+    background: #141414;
+    border-radius: 50%;
+    border: var(--bord);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #999999; 
+    font-size: 16px;
+}
+
+
+.fa-arrow-left{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; 
+    height: 50px;
+    background: #141414;
+    border-radius: 50%;
+    border: var(--bord);
+    color: #999999; 
+    font-size: 16px;
+}
+
+
+
+.background-footer{
+    background-image: url(../img/Background\ Images\ \(1\).png);
+    background-size: cover;
+    height: 225px;
+    object-fit: cover;
+    margin: 30px 0px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: var(--raduis);
+    border: var(--bord);
+    .background-footer-info{
+        h2{
+            color: white;
+        }
+        p{
+            color: #999999;
+        }
+    }
+    .btn-danger{
+        background-color: #E50000;
+        padding: 15px 25px; 
+    }
+}
+
+
+
+
+
+
+@media (max-width:768px) {
+    .container{
+        margin: 0;
+    }
+    .none{
+        display: none;
+    }
+    /* landpage responivse */
+    .land-info{
+        position: absolute;
+        left: 10px;
+        p{
+            display: none;
+        }
+        .land-info-footer{
+            flex-direction: column;
+            .btn{
+                padding: 15px 135px;
+            }
+        }
+    }
+    .background-footer{
+        background-position: 840px;
+        flex-direction: column;
+        text-align: center;
+        height:370px ;
+        .background-footer-info{
+            width: 300px;
+            height: 100px;
+            
+        }
+    }
+
+}
