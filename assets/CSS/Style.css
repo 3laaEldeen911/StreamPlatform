@@ -108,12 +108,12 @@ body {
 .navbar .nav-link {
     color: white;
     font-size: 18px;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease-in-out ;
 }
 
-.navbar .nav-link:hover {
-    color: red;
-}
+/* .navbar .nav-link:hover {
+    color: ;
+} */
 
 .hero-container {
     display: flex;
@@ -226,7 +226,7 @@ color: #262626;
     position: relative;
 }
 
-.movies-card-body {
+.   ody {
     text-align: center;
     overflow: hidden;
 }
