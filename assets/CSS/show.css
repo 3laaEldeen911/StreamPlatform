@@ -678,8 +678,8 @@ height: 100%;
         }
         .land-info-footer{
             flex-direction: column;
-            .btn{
-                padding: 15px 135px;
+            .btn {
+                padding: 15px 115px;
             }
         }
     }
