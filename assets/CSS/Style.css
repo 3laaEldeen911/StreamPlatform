@@ -392,9 +392,6 @@ i.fa-solid.fa-arrow-right {
     height: 98px;
     gap: 14px; */
     /* background-color: blue; */
-    
-
-
 
 
 /* .title{
@@ -422,7 +419,9 @@ letter-spacing: 0%;
         margin-right:20px ;
     }
     .movie-container-header-title {
-        width: 990px;
+        h2{
+            white-space: nowrap;
+        }
         color: #999999;
     }
 }
@@ -624,9 +623,7 @@ margin-top: 5%;
 
 }
 .style4{
-    /* width: 1596px;
-height: 98px;
-gap: 100px; */
+
 margin-left: -7%;
 display: flex;
 justify-content: center;
@@ -635,9 +632,7 @@ align-items: center;
 
 
 .cards4{
-    /* width: 1596px;
-height: 425px;
-gap: 30px; */
+
 display: flex;
 justify-content: center;
 align-items: center;
