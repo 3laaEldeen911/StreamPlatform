@@ -178,6 +178,10 @@ form span{
         background-color: #E50000;
         padding: 15px 25px; 
     }
+    .btn-danger:hover{
+        background-color: #ffffff;
+        color: #0F0F0F;
+    }
 }
 
 .footer-container{

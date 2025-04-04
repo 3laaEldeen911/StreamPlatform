@@ -139,6 +139,10 @@ a{
         background-color: #E50000;
         padding: 15px 25px; 
     }
+    .btn-danger:hover{
+        background-color: #ffffff;
+        color: #0F0F0F;
+    }
 }
 
 .subscription-title-head{
@@ -208,8 +212,12 @@ a{
         background-color: #141414;
         border: var(--bord);
     }
+    .subscription-button-a:hover{
+        background-color: #E50000;
+    }
+ 
     .subscription-button-b{
-         background-color: #E50000;    
+        background-color: #E50000;
 } 
 }
 
